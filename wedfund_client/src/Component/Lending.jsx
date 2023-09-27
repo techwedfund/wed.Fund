@@ -10,7 +10,7 @@ function Lending () {
                     <div className='col-md-4 m-auto'>
                         <img src={lending} className='img img-fluid' alt='lendingPartner' />
                         <div className="linkEdit">
-                            <a href='https://www.lendingkart.com/business-loan/sme/Wedfund?lksrc=c3JjPVdlZGZ1bmQmdHlwZT1lY29tJnJlZmlkPVdlZGZ1bmQwMDE' className='linkButton btn text-center' target='_blank'>Contact Lending Partner</a>
+                            <a href='https://www.lendingkart.com/business-loan/sme/Wedfund?lksrc=c3JjPVdlZGZ1bmQmdHlwZT1lY29tJnJlZmlkPVdlZGZ1bmQwMDE' className='linkButton btn text-center' rel="noreferrer noopener" target='_blank'>Contact Lending Partner</a>
                         </div>
                     </div>
                 </div>

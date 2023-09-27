@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import '../style/GoToTop.css'
-import scrollimg from '../assets/img/Group 105.png' 
 
 function GoToTop() {
 
