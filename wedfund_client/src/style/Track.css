@@ -1,0 +1,39 @@
+.modal-content{
+    height: 300px;
+    background-color: #FFEAE8;
+    border-bottom: 0;
+  }
+  .modal-footer{
+    border-top: 0;
+  }
+  .modal-header{
+    border-bottom: 0;
+  }
+.inputContainer{
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+  }
+  
+.txt{
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .track{
+    width: 61%;
+  }
+  .btncontainer{
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 2rem;
+  }
+
+
+@media only screen and (min-width:200px) and (max-width: 576px) {
+    .track{
+      width: 65%;
+    }
+}

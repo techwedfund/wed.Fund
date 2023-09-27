@@ -1,0 +1,147 @@
+@media (max-width:575px){
+    .wedLogo{
+        margin-left: -0.7rem;
+    }
+    .mtF{
+        margin-top: 45rem;
+    }
+}
+
+.btn-footer{
+    border: 1px solid #000;
+}
+
+.btn-footer:hover{
+    border: 1px solid #000;
+}
+
+.imgHW{
+    width: 500px;
+    height: 377px;
+}
+
+.border-career{
+    border-bottom: 1px solid #000;
+    margin-top: 2rem;
+}
+
+.careerBottom1{
+    /* border: 3px solid #6c0505; */
+    border-radius: 39px;
+    height: 450px;
+    /* width: 250px; */
+    margin-top: -7rem;
+}
+
+.contactNo{
+    font-size: 0.5rem;
+}
+
+.card{
+    background: rgb(244, 235, 235);
+    border: 0;
+}
+
+.fa-brands{
+    transition: transform 0.5s;
+}
+
+.fa-brands:hover{
+    transform: scale(1.2);
+}
+
+@media only screen and (min-width: 301px) and (max-width: 400px){
+    .border-career{
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 500px){
+    .border-career{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 600px){
+    .border-career{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 700px){
+    .border-career{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 800px){
+    .border-career{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 991px){
+    .border-career{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .careerBottom1{
+    margin-top: 1rem;
+    }
+}
+
+@media (min-width: 576px){
+    .mtF{
+        margin-top: 63rem;
+    }
+}
+
+@media (min-width:768px) {
+    .mtF{
+        margin-top: 20rem
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 320px){
+    .imgHW{
+        /* width: 57px; */
+        height: 120px;
+    }
+  }
+@media only screen and (min-width: 321px) and (max-width: 399px){
+    .imgHW{
+        /* width: 88px; */
+        height: 150px;
+    }
+  }
+@media only screen and (min-width: 400px) and (max-width: 576px){
+    .imgHW{
+        /* width: 109px; */
+        height: 160px;
+    }
+  }
+@media only screen and (min-width: 577px) and (max-width: 767px){
+    .imgHW{
+        /* width: 154px; */
+        height: 198px;
+    }
+  }
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .imgHW{
+        /* width: 212px; */
+        height: 300px;
+    }
+  }
+@media only screen and (min-width: 1525px) {
+    .imgHW{
+        width: 700px;
+    }
+}
+@media only screen and (min-width: 2120px) {
+    .imgHW{
+        width: 900px;
+        height: 500px;
+    }
+}
