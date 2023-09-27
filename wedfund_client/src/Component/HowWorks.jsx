@@ -60,7 +60,7 @@ function HowWorks() {
               >
                 <SwiperSlide className="d-flex justify-content-center howWorks-padding">
                   <div className="card">
-                    <img src={person} className="card-img-top" alt="..." />
+                    <img src={person} className="card-img-top" alt="person" />
                     <div className="card-body">
                       <h5 className="card-title">Request for Credit Line</h5>
                       <p className="card-text"> Apply and get a call back </p>
@@ -69,7 +69,7 @@ function HowWorks() {
                 </SwiperSlide>
                 <SwiperSlide className="d-flex justify-content-center howWorks-padding">
                   <div className="card">
-                    <img src={image_16} className="card-img-top" alt="..." />
+                    <img src={image_16} className="card-img-top" alt="thumb" />
                     <div className="card-body">
                       <h5 className="card-title">KYC</h5>
                       <p className="card-text">
@@ -80,7 +80,7 @@ function HowWorks() {
                 </SwiperSlide>
                 <SwiperSlide className="d-flex justify-content-center howWorks-padding">
                   <div className="card">
-                    <img src={image_17} className="card-img-top" alt="..." />
+                    <img src={image_17} className="card-img-top" alt="thumb" />
                     <div className="card-body">
                       <h5 className="card-title">Get your loan offer</h5>
                       <p className="card-text">
@@ -92,7 +92,7 @@ function HowWorks() {
                 </SwiperSlide>
                 <SwiperSlide className="d-flex justify-content-center howWorks-padding">
                   <div className="card">
-                    <img src={image_18} className="card-img-top" alt="..." />
+                    <img src={image_18} className="card-img-top" alt="thumb" />
                     <div className="card-body">
                       <h5 className="card-title">Agreement & Onboarding</h5>
                       <p className="card-text">
@@ -103,7 +103,7 @@ function HowWorks() {
                 </SwiperSlide>
                 <SwiperSlide className="d-flex justify-content-center howWorks-padding">
                   <div className="card">
-                    <img src={image_19} className="card-img-top" alt="..." />
+                    <img src={image_19} className="card-img-top" alt="thumb" />
                     <div className="card-body">
                       <h5 className="card-title">Grow your business</h5>
                       <p className="card-text">

@@ -2,9 +2,7 @@ import '../style/Footer.css'
 import logo from '../assets/img/completeLogo.png'
 
 function Footer () {
-    const handleClick = () => {
-        window.scrollTo(0,0)
-}
+
     return(
         <>
             <footer style={{background: 'rgb(244, 235, 235)', marginBottom: '-2rem', marginTop: '8rem'}}>
@@ -15,7 +13,7 @@ function Footer () {
                             <div>
                             </div>
                             <p style={{ color: "#6c0505" }}>We at WedFund understand your business requirement for fast & flexible financing. Our platform can help your business get the funding you need quickly, easily & hassle free</p>
-                            <p className="mt-5">Businesses are expecting a surge in sales during the wedding season. You can use WedFund to get credit to prepare your business for peak season without having to tie up you own cash.</p>
+                            <p className="mt-5">Businesses are expecting a surge in sales during the festival season. You can use WedFund to get credit to prepare your business for peak season without having to tie up you own cash.</p>
 
                             <a className='btn btn-footer' style={{border: '2px solid #6c0505', background: '#6c0505', color: '#fff', fontWeight:'500'}} href='https://www.lendingkart.com/business-loan/sme/Wedfund?lksrc=c3JjPVdlZGZ1bmQmdHlwZT1lY29tJnJlZmlkPVdlZGZ1bmQwMDE' target='_blank'>Apply Now</a>
                         </div>

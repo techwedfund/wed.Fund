@@ -25,7 +25,7 @@ function GoToTop() {
     return(
         <>
             {backToTop && (
-                <button className='back-to-top' onClick={toggleScroll}><i class="fa-solid fa-arrow-up"></i></button>
+                <button className='back-to-top' onClick={toggleScroll}><i className="fa-solid fa-arrow-up"></i></button>
             )}
         </>
     )

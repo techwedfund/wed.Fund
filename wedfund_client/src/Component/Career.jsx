@@ -11,56 +11,56 @@ function Career () {
                         <h2 className='h2Edit mt-2'>Our Mission</h2>
                         <p className='paraEditCareer'>WedFund's mission is to empower small and medium enterprises across India by providing them with the financial support they need to flourish. We're on a quest to transform the way businesses access capital, making it easier, faster, and more efficient.</p>
                         <h2 className='h2Edit mt-2'>Why WedFund?</h2>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col highlighted-tag-margin">
-                                    <div class="highlighted-tag">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col highlighted-tag-margin">
+                                    <div className="highlighted-tag">
                                         &#8226; &nbsp;Impact:
                                     </div>
                                 </div>
-                                <div class="col-lg-10 careerPara">
+                                <div className="col-lg-10 careerPara">
                                     <p className='paraEdit'>
                                         Join a team that's actively shaping the future of the Indian business landscape. We're not just providing loans; we're fuelling dreams and fostering growth.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col highlighted-tag-margin">
-                                    <div class="highlighted-tag">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col highlighted-tag-margin">
+                                    <div className="highlighted-tag">
                                         &#8226; &nbsp;Innovation:
                                     </div>
                                 </div>
-                                <div class="col-lg-10 careerPara">
+                                <div className="col-lg-10 careerPara">
                                     <p className='paraEdit'>
                                         Be part of a dynamic environment where innovation is at the forefront. We're constantly exploring new technologies and solutions to better serve our clients.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col highlighted-tag-margin">
-                                    <div class="highlighted-tag">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col highlighted-tag-margin">
+                                    <div className="highlighted-tag">
                                         &#8226; &nbsp;Team Spirit:
                                     </div>
                                 </div>
-                                <div class="col-lg-10 careerPara">
+                                <div className="col-lg-10 careerPara">
                                     <p className='paraEdit'>
                                         Collaborate with a group of passionate, forward-thinking individuals who thrive on solving complex challenges together.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col highlighted-tag-margin">
-                                    <div class="highlighted-tag">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col highlighted-tag-margin">
+                                    <div className="highlighted-tag">
                                         &#8226; &nbsp;Growth:
                                     </div>
                                 </div>
-                                <div class="col-lg-10 careerPara">
+                                <div className="col-lg-10 careerPara">
                                     <p className='paraEdit'>
                                         We invest in our team members' personal and professional growth. Your success is our success, and we're committed to helping you reach your full potential.
                                     </p>

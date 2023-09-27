@@ -8,6 +8,10 @@
     font-size: 23px;
 }
 
+.navbar-brand:hover{
+    color: #6C0505;
+}
+
 .fixed-top{
     background: #fff;
 }

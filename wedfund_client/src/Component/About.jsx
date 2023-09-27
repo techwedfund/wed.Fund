@@ -7,7 +7,7 @@ function About () {
             <section className='backAbout' />
             <div className='container'>
                 <h2 className='textAbout text-center'> About Us </h2>
-                <img src={Rect} alt="img" className="img-fluid rounded mx-auto d-block" />
+                <img src={Rect} alt="about" className="img-fluid rounded mx-auto d-block" />
             </div>
 
             <div className='container mt-5'>
