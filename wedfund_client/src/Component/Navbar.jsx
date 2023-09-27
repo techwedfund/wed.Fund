@@ -10,9 +10,13 @@ function Navbar () {
 
     const redirectFooter = () => {
         const footer = document.getElementById('footer');
+        const howWorks = document.getElementById('how-It-Works')
 
         if(footer){
             footer.scrollIntoView({behavior: 'smooth'})
+        }
+        if(howWorks){
+            howWorks.scrollIntoView({behavior: 'smooth'})
         }
     }
     return(
@@ -32,7 +36,7 @@ function Navbar () {
                         <Link className={`nav-link ${location.pathname==="/about"? "active": ""} px-4` }  to="/about">About Us</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className={`nav-link ${location.pathname==="/how-it-works"? "active": ""} px-4` }  to="/how-it-works">How it Works</Link>
+                        <Link className={`nav-link ${location.pathname==="/how-it-works"? "active": ""} px-4` } onClick={redirectFooter}  to="/#how-It-Works">How it Works</Link>
                         </li>
                         <li className="nav-item">
                         <Link className={`nav-link ${location.pathname==="/careers"? "active": ""} px-4` }  to="/careers">Careers</Link>

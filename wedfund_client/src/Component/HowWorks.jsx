@@ -40,7 +40,7 @@ function HowWorks() {
   }
   return (
     <>
-      <div className="container">
+      <div className="container" id="how-It-Works">
         <div className="howWorks-container">
           <div className="row">
             <h1 className="text-center">
