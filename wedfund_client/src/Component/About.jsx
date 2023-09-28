@@ -12,7 +12,7 @@ function About () {
 
             <div className='container mt-5'>
                 <div className='row'>
-                    <p className='paraAbout'>So you came all the way here that means you want to know more about us..</p>
+                    <p className='paraAbout mt-5'>So you came all the way here that means you want to know more about us..</p>
                     <p className='para-textAbout'>WedFund is a financial technology company that provides tailored business loans to micro, small, and medium enterprises (MSMEs) in the Indian wedding industry. We are committed to empowering businesses in this sector with flexible and accessible financing options, so they can achieve their growth goals.</p>
                     <p className='para-textAbout'>Our mission is to bridge the financial gap for wedding businesses, so they can expand their operations, invest in new products and services, and create jobs. We believe that every business deserves the opportunity to succeed, and we are here to help them make that happen.</p>
                     <p className='para-textAbout'>WedFund is backed by a team of experienced professionals with a deep understanding of the Indian wedding industry. We know the unique challenges faced by entrepreneurs in this niche, and we are here to provide the solutions they need.We offer a variety of loan products to meet the specific needs of our clients. Our loans are available for a variety of purposes, including:</p>
