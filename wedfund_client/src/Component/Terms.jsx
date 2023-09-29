@@ -52,7 +52,7 @@ function Terms () {
                 <div className='row'>
                     <div className='col-xl-4 col-md-6 terms-detail'>*Preclosures are only allowed after first EMI is payed in full.</div>
                     <div className='col-xl-4 col-md-6 terms-detail'>** Based on the health of your business, revenues and annual turnover.</div>
-                    <div className='col-xl-4 col-md-6 terms-detail'>** Preclouser charges maybe applicable on case-to-case basis.</div>
+                    <div className='col-xl-4 col-md-6 terms-detail'>*** Preclosure charges maybe applicable on case-to-case basis.</div>
                 </div>
             </div>
         </div>
