@@ -33,7 +33,7 @@ function Terms () {
                             <div id='terms-img3'>
                             <img src={uygu} className='img-fluid mt-3 terms-imgWidth' alt='image_15'/>
                             </div>
-                                <p className='terms-text' style={{background:'#fff'}}>Loan Tenure : <span style={{color: '#6c0505'}}> 1 month - 1 year</span></p>
+                                <p className='terms-text' style={{background:'#fff'}}>Loan Tenure : <span style={{color: '#6c0505'}}> 1 year - 3 years</span></p>
                             </div>
                         </div>
                         <div className='col-xl-3 col-md-6 mt-5 terms-align'>
