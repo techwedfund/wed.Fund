@@ -1,9 +1,43 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../assets/img/logo.png'
 import '../style/Navbar.css'
+// import '../js/main.js'
 import {  useLocation } from 'react-router-dom';
 
 function Navbar () {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 991);
+
+    // Function to close the Bootstrap menu
+    const closeMenu = () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+            navbarCollapse.classList.remove('show');
+        }
+    };
+    
+    // Add a click event listener to all nav links when in mobile view
+    useEffect(() => {
+        if (isMobile) {
+            const navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
+            navLinks.forEach((link) => {
+                link.addEventListener('click', closeMenu);
+        });
+      }
+    }, [isMobile]);
+  
+    // Check the window width on page load and resize
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 991);
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      // Remove event listener when component unmounts
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
 
     let location = useLocation();
     useEffect( () => {},[location])

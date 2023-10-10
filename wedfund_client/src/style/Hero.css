@@ -58,9 +58,13 @@
 
 @media only screen and (max-width: 320px){
     #heroImg1{ 
-        width: 264px;
+        width: auto;
         margin-top: 0rem;
         margin-left: 0;
+        height: auto;
+    }
+    .btn_Hero{
+        margin-top: -1.1rem;
     }
     #heroImg2{
         display: none;
@@ -72,9 +76,13 @@
 
 @media only screen and (min-width: 321px) and (max-Width: 351px){
     #heroImg1{
-        width: 270px;
+        width: auto;
+        height: auto;
         margin-left: 0.3rem;
         margin-top: 0.2rem;
+    }
+    .btn_Hero{
+        margin-top: -1.2rem;
     }
     #heroImg2{
         display: none;
@@ -86,9 +94,13 @@
 
 @media only screen and (min-width: 351px) and (max-Width: 401px){
     #heroImg1{
-        width: 290px;
-        margin-left: 1.8rem;
+        width: auto;
+        margin-left: 0rem;
         margin-top: 0.2rem;
+        height: auto;
+    }
+    .btn_Hero{
+        margin-top: -1.2rem;
     }
     #heroImg2{
         display: none;
@@ -99,9 +111,13 @@
 } 
 @media only screen and (min-width: 401px) and (max-Width: 440px){
     #heroImg1{
-        width: 350px;
-        margin-left: 1rem;
+        width: auto;
+        margin-left: 0rem;
         margin-top: 1rem;
+        height: auto;
+    }
+    .btn_Hero{
+        margin-top: -1.2rem;
     }
     #heroImg2{
         display: none;
@@ -112,9 +128,13 @@
 } 
 @media only screen and (min-width: 441px) and (max-Width: 500px){
     #heroImg1{
-        width: 370px;
-        margin-left: 2rem;
+        width: auto;
+        margin-left: 0rem;
         margin-top: 1rem;
+        height: auto;
+    }
+    .btn_Hero{
+        margin-top: -1.25rem;
     }
     #heroImg2{
         display: none;
@@ -133,20 +153,25 @@
 @media only screen and (min-width: 501px) and (max-width: 557px){
     #heroImg1{
         margin-top: 0;
-        width: 460px;
+        width: auto;
         margin-left: 0rem;
+        height: auto;
     }
     #heroImg2{
        display: none;
+    }
+    .btn_Hero{
+        margin-top: -1.1rem;
     }
 }
 
 @media only screen and (min-width: 558px) and (max-width: 766px){
     #heroImg1{
         margin-top: 0;
-        width: 500px;
+        width: auto;
         margin-left: 0;
-        margin-left: 1.7rem;
+        margin-left: 0rem;
+        height: auto;
     }
     #heroImg2{
         margin-top: 0;
