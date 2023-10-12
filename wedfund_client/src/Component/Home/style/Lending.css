@@ -1,0 +1,51 @@
+.imgLending{
+    width: 70%;
+    height: 16rem;
+}
+
+.lendingPartners{
+    margin-top: 7rem;
+}
+
+.text-lending{
+    color: #241d41;
+    margin: 0;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.lending-text{
+    color: #000;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 161.9%;
+}
+
+.linkEdit{
+    text-align: center;
+}
+
+.linkButton{
+    background-color: #6C0505;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 161.9%;
+}
+
+.linkButton:hover{
+    background-color: #380303;
+    color: #fff;
+}
+
+@media only screen and (max-width: 300px){
+    .imgLending{
+        margin-top: -3rem;
+    }
+}

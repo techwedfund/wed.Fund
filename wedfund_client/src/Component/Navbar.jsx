@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from '../assets/img/logo.png'
 import '../style/Navbar.css'
 // import '../js/main.js'
-import {  useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function Navbar () {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 991);

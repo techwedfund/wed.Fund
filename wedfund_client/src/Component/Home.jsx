@@ -1,28 +1,16 @@
-import Terms from "./Terms"
-import WhyWed from "./WhyWed"
-import Document from "./Document"
-import Lending from "./Lending"
-import Need from "./Need"
-import Collateral from "./Collateral"
-import Hero from "./Hero"
-import HowWorks from "./HowWorks"
 import GoToTop from "./GoToTop"
 import '../style/Home.css'
+import { Outlet } from "react-router-dom"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 function Home () {
     return(
         <>
-                <Hero />
-                <div className="back-img">
-                <Collateral />
-                <WhyWed />
-                <HowWorks />
-                <Terms />
-                <Document />
-                <Lending />
-                <Need />
-                </div>
-                <GoToTop />
+        <Navbar />
+        <Outlet />
+        <GoToTop />
+        <Footer />
         </>
     )
 }
