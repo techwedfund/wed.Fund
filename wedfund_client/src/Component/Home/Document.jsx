@@ -18,7 +18,7 @@ function Document () {
                         </ul>
                     </div>
                 </div>
-                <span className="docP" style={{background:'#fff'}}>*Only for Partnership companies, Pvt.Ltd or LCC companies</span>
+                <p className="docP" style={{background:''}}>*Only for Partnership companies, Pvt.Ltd or LCC companies</p>
             </div>
         </>
     )
