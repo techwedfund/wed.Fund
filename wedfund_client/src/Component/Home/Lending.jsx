@@ -6,7 +6,7 @@ function Lending () {
         <>
             <div className='container lendingPartners'>
                 <div className='row'>
-                    <h1 className='text-center mb-3 lending-text' style={{background:'#fff'}}>Our <span style={{color:'#6c0505'}}> Lending Partner</span></h1>
+                    <h1 className='text-center mb-3 lending-text' style={{background:''}}>Our <span style={{color:'#6c0505'}}> Lending Partner</span></h1>
                     <div className='col-md-4 m-auto'>
                         <img src={lending} className='img img-fluid' alt='lendingPartner' />
                         <div className="linkEdit">

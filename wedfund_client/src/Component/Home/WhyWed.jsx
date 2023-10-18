@@ -10,7 +10,7 @@ function WhyWed() {
         <>
             <div className='container'>
                 <div className='whywed-container'>
-                    <h1 className='text-center' style={{background:'#fff'}}><strong>Why <span style={{color:"#6c0505"}}>WedFund</span></strong></h1>
+                    <h1 className='text-center' style={{background:''}}><strong>Why <span style={{color:"#6c0505"}}>WedFund</span></strong></h1>
                     <div className='row'>
                         <div className='col-xl-3 col-md-6 mt-5 whywed-align'>
                             <div className='whywed-style'>

@@ -1,8 +1,82 @@
+import { useState } from 'react';
 import '../style/Career.css'
+import Alert from './Alert'
 
 function Career () {
+
+const [showAlert, setSheowAlert] = useState(false)
+
+const [form, setForm] = useState({
+    name: '',
+    email: '',
+    phone: '' // Corrected field name
+  });
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    });
+  }
+  const [error, setError] = useState({});
+
+  const validationForm = () => {
+    let isValid = true;
+    const newError = {};
+
+    if (!form.name.match(/^[\p{L} .'-]+$/u)) {
+      newError.name = "Name is Required";
+      isValid = false;
+    } else if (form.name.length < 5) {
+      newError.name = 'At least 5 characters';
+    } else {
+      newError.name = ''; // Clear the name
+    }
+
+    // Check validation for the "email" field
+    if (!form.email.match(/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/)) {
+      newError.email = "Enter valid Email";
+      isValid = false;
+    } else {
+      newError.email = ''; // Clear the email error message
+    }
+
+    // Check validation for the "phone" field
+    if (!form.phone.match(/^[6-9]{1}[0-9]{9}$/)) {
+      newError.phone = "Provide correct Number";
+      isValid = false;
+    } else {
+      newError.phone = ''; // Clear the phone error message
+    }
+
+    setError(newError);
+    return isValid;
+  }
+
+  const formSubmit = async (e) => {
+    e.preventDefault();
+
+    if (validationForm()) {
+      try {
+        const response = await fetch('http://localhost:5000/data', {
+          method: 'POST',
+          body: JSON.stringify(form),
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        });
+
+        const data = await response.json();
+        console.log(data);
+        setSheowAlert(true)
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  }
     return(
         <>
+        { showAlert ? (<Alert />) : (<div>
         <div className='container mt-4'>
                 <div className='row'>
                     <div className='col-lg-12 mb-4'>
@@ -80,28 +154,33 @@ function Career () {
                         <p className='JoinWed'>If you're ready to be part of a team that's rewriting the rules of financial accessibility for MSMEs in India, we invite you to explore our current job openings below. Your journey starts here, and together, we'll build a brighter future for businesses across the nation.</p>
                         {/* <p className='ready'>Ready to Join Us </p> */}
                         <div className='d-flex justify-content-center'>
-                            <form>
+                            <form onSubmit={formSubmit}>
                                 <div className="form-group mt-4 ">
-                                    <input type="text" className="form-control placeholder-xs" id="name" name="name" placeholder="Enter your name" style={{ fontFamily: "Montserrat" }} />
+                                    <input type="text" className={`form-control ${error.name && "is-invalid"} placeholder-xs`} id="name" name="name" value={form.name} onChange={handleChange} placeholder="Enter your name" style={{ fontFamily: "Montserrat" }} />
+                                    {error.name && <span className="error mx-2 invalid-feedback" style={{ marginBottom: "-0.4rem", marginTop: "-0.1rem" }}>{error.name}</span>}
                                 </div>
                                 <div className="form-group mt-2 ">
-                                    <input type="email" className="form-control placeholder-xs" id="email" name="email" placeholder="Enter your email" style={{ fontFamily: "Montserrat" }} />
+                                    <input type="email" className={`form-control ${error.email && "is-invalid"} placeholder-xs`} id="email" name="email" value={form.email} onChange={handleChange} placeholder="Enter your email" style={{ fontFamily: "Montserrat" }} />
+                                    {error.email && <span className="error mx-2 invalid-feedback" style={{ marginBottom: "-0.4rem", marginTop: "-0.1rem" }}>{error.email}</span>}
                                 </div>
                                 <div className="form-group mt-2 ">
-                                    <input type="phone" className="form-control placeholder-xs" id="phone" name="phone" placeholder="Enter your phone" style={{ fontFamily: "Montserrat" }} />
+                                    <input type="phone" className={`form-control ${error.phone && "is-invalid"} placeholder-xs`} id="phone" name="phone" value={form.phone} onChange={handleChange} placeholder="Enter your phone" style={{ fontFamily: "Montserrat" }} />
+                                    {error.phone && <span className="error mx-2 invalid-feedback" style={{ marginBottom: "-0.4rem", marginTop: "-0.1rem" }}>{error.phone}</span>}
                                 </div>
                                 <div className="form-group mt-2 ">
                                     <input type="file" id="cv" name="cv" className="form-control-file form-control placeholder-xs" accept=".pdf,.doc,.docx" />
                                 </div>
 
                                 <div className='mb-4 text-center'>
-                                    <button type="button" className="btn btn-primary btnEdit text-center" style={{ background: "#6c0505", border: 'none', width: "100px" }}>Submit</button>
+                                    <button type="submit" className="btn btn-primary btnEdit text-center" style={{ background: "#6c0505", border: 'none', width: "100px" }}>Submit</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>)
+        }
         </>
     )
 }

@@ -2,14 +2,10 @@
 
 .heroText{
     font-family: Inter;
-    background-color: #fff;
+    /* background-color: #fff; */
     font-weight: 900;
 }
-
-.backImg{
-    background-image: url('../assets/img/Group 106.png');
-}
-
+    
 #heroText{
     margin-top: 10rem;
 }

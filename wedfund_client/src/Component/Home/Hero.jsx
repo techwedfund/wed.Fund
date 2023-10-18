@@ -14,8 +14,8 @@ function Hero() {
     return(
         <>
         <div className='back-img'>
-            <div className='container backImg'>
-                <div style={{background: '#fff'}}>
+            <div className='container '>
+                <div className="backgrounImg">
                 <h1 className='text-center fw-700 heroText' id='heroText'><strong>Ready to Revolutionize</strong></h1>
                 <h1 className='text-center heroText' id='weddingHead'>Your Business?</h1>
 
