@@ -7,7 +7,9 @@ import image_18 from "./assets/img/image 18.png";
 import image_19 from "./assets/img/image 19.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay } from "swiper/modules";
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 function HowWorks() {
     // const [slidesPerView, setSlidesPerView] = useState(window.innerWidth <= 767 ? 1 : 4 );
@@ -52,10 +54,17 @@ function HowWorks() {
               <Swiper
                 spaceBetween={0}
                 slidesPerView={slidesPerView}
-                speed={2500}
-                modules={[Autoplay]}
-                autoplay={{ delay: 2000, disableOnInteraction: false }}
-                loop="true"
+                autoplay={{
+                  delay: 4500,
+                  disableOnInteraction: false,
+                }}
+                modules={[Autoplay, Navigation]}
+                // pagination={{
+                //   clickable: true,
+                // }}
+                // navigation={true}
+                rewind={true}
+                loop={true}
                 className="how-pad"
               >
                 <SwiperSlide className="d-flex justify-content-center howWorks-padding">

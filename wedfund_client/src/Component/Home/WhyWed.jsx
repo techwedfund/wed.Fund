@@ -1,8 +1,8 @@
 import React from 'react';
 import './style/WhyWed.css';
-import assurance from './assets/img/assurance 1.png'
+import assurance from './assets/img/business-and-finance 1.png'
 import exercise from './assets/img/exercise 1.png'
-import image_15 from './assets/img/image 15.png'
+import image_15 from './assets/img/assurance 1.png'
 import overtime from './assets/img/overtime 1.png'
 
 function WhyWed() {

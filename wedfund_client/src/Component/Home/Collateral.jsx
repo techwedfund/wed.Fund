@@ -1,5 +1,5 @@
 import React from 'react';
-import collateral from './assets/img/image 12.png'
+import collateral from './assets/img/property-insurance 1.png'
 import trade from './assets/img/vbhbn 1.png'
 import digital from './assets/img/image 11.png'
 import './style/Collateral.css'
