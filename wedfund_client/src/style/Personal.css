@@ -1,0 +1,88 @@
+.personal{
+    background-color: #7c2d2d;
+    width: 100%;
+    /* height: 70px; */
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+#showCont{
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    font-family: Monterresa;
+    margin-top: 5px;
+}
+
+.btn-Apply{
+    background-color: #fff;
+    font-weight: 500;
+    margin-top: 5px
+}
+
+.btn-Apply:hover{
+    background-color: #fff;
+}
+
+.btn-Apply:active{
+    border: none;
+    background-color: #6c0505;
+}
+
+#hideCont{
+    display: none;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    font-family: Monterresa;
+    margin-top: 5px;
+}
+
+#otherCont{
+    display: none;
+}
+
+#arrowUp{
+    text-align: center;
+}
+
+#arrowDown{
+    display: none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+    .personal{
+        width: auto;
+    }
+    .personalHead{
+        /* margin: auto; */
+        padding-left: 5px;
+        padding-right: 8px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #hideCont{
+        display: block;
+    }   
+    #showCont{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #arrowUp{
+        /* text-align: center; */
+        display: none;
+    }
+    
+    #arrowDown{
+        display: none;
+        /* text-align: center; */
+    }
+}

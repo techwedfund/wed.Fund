@@ -25,7 +25,7 @@ function Footer () {
                             </div>
                             <div className='phoneSection'>
                                 <p>PHONE</p>
-                                <h5 className='h5Edit'><i className="fa-solid fa-phone"></i>&nbsp; <span id="contactNo">+91 8595950140, +91 7209957963</span></h5>
+                                <p className='h5Edit'><i className="fa-solid fa-phone"></i>&nbsp; <span id="contactNo">+91 8595950140, +91 7209957963</span></p>
                                 <div className='border-career'></div>
                             </div>
                             <div className='socialSection'>

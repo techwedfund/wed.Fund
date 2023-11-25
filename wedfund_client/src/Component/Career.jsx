@@ -1,21 +1,31 @@
 import { useState } from 'react';
 import '../style/Career.css'
 import Alert from './Alert'
+import axios from 'axios';
+// import emailjs from '@emailjs/browser';
+
 
 function Career () {
+
+// const formData = useRef() 
 
 const [showAlert, setSheowAlert] = useState(false)
 
 const [form, setForm] = useState({
     name: '',
     email: '',
-    phone: '' // Corrected field name
+    phone: '', // Corrected field name
+    cv: null
   });
 
   const handleChange = (e) => {
+
+    const {name, value, type, files } = e.target;
+    const inputValue = type === 'file' ? files[0] : value;
+
     setForm({
       ...form,
-      [e.target.name]: e.target.value
+      [name]: inputValue
     });
   }
   const [error, setError] = useState({});
@@ -49,31 +59,61 @@ const [form, setForm] = useState({
       newError.phone = ''; // Clear the phone error message
     }
 
+    if (form.cv === null || form.cv === undefined || form.cv === '') {
+        newError.cv = "Please select file";
+        isValid = false;
+    } else {
+        newError.cv = ''; // Clear the cv error message
+    }
+    // console.log('newError.cv:', newError.cv);
+
     setError(newError);
     return isValid;
   }
 
-  const formSubmit = async (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+    e.preventDefault()
 
-    if (validationForm()) {
-      try {
-        const response = await fetch('http://localhost:5000/data', {
-          method: 'POST',
-          body: JSON.stringify(form),
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        });
+    const formDataToSend = new FormData()
+    formDataToSend.append('name', form.name)
+    formDataToSend.append('email', form.email)
+    formDataToSend.append('phone', form.phone)
+    formDataToSend.append('cv', form.cv)
+    
+    if(validationForm()){
+    try {
+        await axios.post('http://localhost:5000/api/upload', formDataToSend, {
+            headers: {
+                "Content-Type" : "multipart/form-data",
+            }
+        })
 
-        const data = await response.json();
-        console.log(data);
-        setSheowAlert(true)
+        alert('Form Submitted Successfully')
+        // setSheowAlert(true)
+        setForm({
+            name: "",
+            email: "",
+            phone: "",
+            cv: '' && null,
+        })
+        document.getElementById("cv").value = "";
       } catch (error) {
         console.log(error);
+        alert('Resubmit Your Form, Please');
       }
-    }
-  }
+}
+}
+
+//   const emailSubmit = (e) => {
+//     e.preventDefault()
+
+//     emailjs.sendForm('service_mwrc7qe', 'template_lchd0eb', formData.current, 'zAIfKljmVje73gZNF')
+//     .then((result) => {
+//         console.log(result.text);
+//     }, (error) => {
+//         console.log(error.text);
+//     });
+//   }
     return(
         <>
         { showAlert ? (<Alert />) : (<div>
@@ -154,7 +194,7 @@ const [form, setForm] = useState({
                         <p className='JoinWed'>If you're ready to be part of a team that's rewriting the rules of financial accessibility for MSMEs in India, we invite you to explore our current job openings below. Your journey starts here, and together, we'll build a brighter future for businesses across the nation.</p>
                         {/* <p className='ready'>Ready to Join Us </p> */}
                         <div className='d-flex justify-content-center'>
-                            <form onSubmit={formSubmit}>
+                            <form onSubmit={handleSubmit}>
                                 <div className="form-group mt-4 ">
                                     <input type="text" className={`form-control ${error.name && "is-invalid"} placeholder-xs`} id="name" name="name" value={form.name} onChange={handleChange} placeholder="Enter your name" style={{ fontFamily: "Montserrat" }} />
                                     {error.name && <span className="error mx-2 invalid-feedback" style={{ marginBottom: "-0.4rem", marginTop: "-0.1rem" }}>{error.name}</span>}
@@ -168,7 +208,8 @@ const [form, setForm] = useState({
                                     {error.phone && <span className="error mx-2 invalid-feedback" style={{ marginBottom: "-0.4rem", marginTop: "-0.1rem" }}>{error.phone}</span>}
                                 </div>
                                 <div className="form-group mt-2 ">
-                                    <input type="file" id="cv" name="cv" className="form-control-file form-control placeholder-xs" accept=".pdf,.doc,.docx" />
+                                    <input type="file" id="cv" name="cv" className={`form-control-file form-control ${error.cv && 'is-invalid'} placeholder-xs`} accept=".pdf,.doc,.docx" onChange={handleChange}/>
+                                    {error.cv && <span className="error mx-2 invalid-feedback" style={{ marginBottom: "-0.4rem", marginTop: "-0.1rem" }}>{error.cv}</span>}
                                 </div>
 
                                 <div className='mb-4 text-center'>

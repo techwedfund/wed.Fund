@@ -30,3 +30,7 @@
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color: #6C0505;
 }
+
+/* .dropdown-menu.show:hover{
+    display: block;
+} */

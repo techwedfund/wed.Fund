@@ -59,7 +59,7 @@ function Navbar () {
 
     return(
         <>
-            <nav className="navbar navbar-expand-lg fixed-top">
+            <nav className="navbar navbar-expand-lg fixed-top bg-white" style={{backgroundColor: 'white'}}>
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/"><img src={logo} rel="noopener noreferrer" className='img-fluid logo' alt='logo' />WedFund</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,21 +70,31 @@ function Navbar () {
                         <li className="nav-item">
                         <a className={`nav-link ${location.pathname==="/"? "active": ""} px-4`} rel="noopener noreferrer" href="/" >Home</a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item dropdown">
+                            <Link to="#" className='nav-link dropdown-toggle px-4' role='button' data-bs-toggle='dropdown'>Company</Link>
+                            <ul className='dropdown-menu'>
+                            <a className={`dropdown-item ${location.pathname==="/about"? "active": ""} px-4` } rel="noopener noreferrer"  href="/about" >About Us</a>
+                            <a className={`dropdown-item ${location.pathname==="/careers"? "active": ""} px-4` } rel="noopener noreferrer"  href="/careers" >Careers</a>
+                            </ul>
+                        </li> */}
+                        <li className='nav-item'>
                         <a className={`nav-link ${location.pathname==="/about"? "active": ""} px-4` } rel="noopener noreferrer"  href="/about" >About Us</a>
                         </li>
                         <li className="nav-item">
                         <a className={`nav-link ${location.pathname==="/how-it-works"? "active": ""} px-4` } rel="noopener noreferrer" onClick={redirectHowWorks}  href="/#how-It-Works">How it Works</a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                         <a className={`nav-link ${location.pathname==="/careers"? "active": ""} px-4` } rel="noopener noreferrer"  href="/careers" >Careers</a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                         <a className="nav-link px-4" href="https://www.lendingkart.com/dashboard/auth" rel="noopener noreferrer" target='_blank'>Track Your Application</a>
                         </li>
                         <li className="nav-item">
                         <a className={`nav-link ${location.pathname==="/#contact"? "active": ""} px-4` }  rel="noopener noreferrer"  href="/#contact" onClick={redirectFooter}>Contact Us</a>
                         </li>
+                        {/* <li className="nav-item">
+                        <a className={`nav-link px-4` }  rel="noopener noreferrer"  href="https://metahiv.netlify.app/" target='_blank'>Personal Loan</a>
+                        </li> */}
                     </ul>
                     </div>
                 </div>

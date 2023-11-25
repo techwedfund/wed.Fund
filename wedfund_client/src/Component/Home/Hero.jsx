@@ -23,7 +23,7 @@ function Hero() {
 
                 </div>
                 <div className='text-center mt-5'>
-                    <a href="https://www.lendingkart.com/business-loan/sme/Wedfund?lksrc=c3JjPVdlZGZ1bmQmdHlwZT1lY29tJnJlZmlkPVdlZGZ1bmQwMDE" className='btn btn_Hero' rel="noreferrer noopener" target='_blank'>Apply Now</a>
+                    <a href="https://www.lendingkart.com/business-loan/sme/Wedfund?lksrc=c3JjPVdlZGZ1bmQmdHlwZT1lY29tJnJlZmlkPVdlZGZ1bmQwMDE" aria-label='lending_cart' className='btn btn_Hero' rel="noreferrer noopener" target='_blank'>Apply Now</a>
                 </div>
                 <div className='row'>
                     <div className='col-lg-6'>

@@ -7,6 +7,17 @@
     margin-top: 7rem;
 }
 
+.lndingItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgHeight{
+    height: 242px;
+}
+
 .text-lending{
     color: #241d41;
     margin: 0;
@@ -47,5 +58,27 @@
 @media only screen and (max-width: 300px){
     .imgLending{
         margin-top: -3rem;
+    }
+}
+
+@media only screen and (max-width: 576px)  {
+    .lndingItems{
+        flex-direction: column;
+    }
+
+    .imgHeight{
+        height: auto;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px)  {
+    .lndingItems{
+        flex-direction: column;
+    }
+
+    .imgHeight{
+        height: auto;
+        margin-top: 1rem;
     }
 }

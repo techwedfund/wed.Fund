@@ -9,8 +9,17 @@
     line-height: 161.9%;
 }
 
+.document-back{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center
+}
+
 .mob7{
     background-color: #fff;
+    /* padding: 13px 25px 14px 30px; */
 }
 
 .docP{
@@ -19,7 +28,7 @@
 
 .docUl{
     padding: 6.25rem 4.75rem 3.75rem 4.75rem;
-    margin-left: -4.5rem;
+    /* margin-left: -4.5rem; */
     justify-content: space-between;
 }
 
@@ -33,11 +42,12 @@
     }
     .docUl{
         padding: 3.25rem 3.75rem 0rem 3.75rem;
-        margin-left: -0.5rem;
+        margin-left: -2.5rem;
     }
     .mob7{
         width: 120%;
         margin-bottom: 0.7rem;
+        padding: 13px 25px 14px 30px;
     }
     .docP{
         margin-top: 7rem;
@@ -56,6 +66,7 @@
     .mob7{
         width: 100%;
         margin-bottom: 0.7rem;
+        padding: 13px 25px 14px 30px;
     }
     
     .docP{
@@ -70,6 +81,7 @@
     }
     .mob7{
         margin-bottom: 0.5rem;
+        padding: 22px 50px 22px 50px;
     }
 
     .docUl{
@@ -82,8 +94,25 @@
     }
 }
 
+
 @media only screen and (min-width: 768px) {
     .docH{
         margin-bottom: -4rem;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1200px) {
+    /* .mob7{
+        padding: 0px 0px 0px 0px;
+    } */
+    .docUl{
+        padding: 6.25rem 0.75rem 3.75rem 0.75rem;
+    }
+    
+}
+
+@media only screen and (min-width: 1300px) {
+    .mob7{
+        padding: 13px 25px 14px 30px;
     }
 }

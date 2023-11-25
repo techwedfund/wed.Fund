@@ -1,7 +1,7 @@
-import fyghj from './assets/img/fyghj 1.png'
-import jhbjk from './assets/img/jhbjk 1.png'
-import uygu from './assets/img/uygu 1.png'
-import guj from './assets/img/guj 1.png'
+import fyghj from './assets/img/-0ioulkhm 2.png'
+import jhbjk from './assets/img/nbhj 1.png'
+import uygu from './assets/img/pppolknkjblk 1.png'
+import guj from './assets/img/mhjn 1.png'
 import './style/Terms.css'
 
 function Terms () {

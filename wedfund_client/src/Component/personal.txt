@@ -1,0 +1,93 @@
+import React, { useEffect } from 'react'
+import '../style/Personal.css'
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
+
+function Personal() {
+    const [showPersonal, setShowPersonal] = useState(false)
+    // const [showArrow, setShowArrow] = useState(false)
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 950){
+                setShowPersonal(true)
+            }
+            else{
+                setShowPersonal(false)
+                // setTimeout(() => {
+                //     setShowPersonal(true)
+                // },1000)
+            }
+        })
+    },[])
+
+    // const handleContent = () => {
+    //     const otherCont = document.getElementById('otherCont')
+    //     const Up = document.getElementById('arrowUp')
+    //     const down = document.getElementById('arrowDown')
+    //     if(otherCont){
+    //         otherCont.style.display = 'block'
+    //         // Up.addEventListener('click', () => {
+    //             Up.style.display = 'none'
+    //             down.style.display = 'block'
+    //         // })
+    //     }
+    // }
+
+    // const handleArrow = () => {
+    //     const otherCont = document.getElementById('otherCont')
+    //     const Up = document.getElementById('arrowUp')
+    //     const down = document.getElementById('arrowDown')
+    //     if(otherCont){
+    //         otherCont.style.display = 'none'
+    //         down.style.display = 'block'
+    //     }
+    //     if(otherCont.style.display === 'none'){
+    //         Up.style.display = 'block'
+    //         down.style.display = 'none'
+    //     }
+    // }
+
+    // const handleClose = (e) => {
+    //     e.preventDefault()
+    //     const closeBtn = document.getElementById('close')
+    //     if(closeBtn){
+    //         setShowPersonal(false)
+    //         // setTimeout(() => {
+    //         //     setShowPersonal(true)
+    //         // },60000)
+    //     }
+    // }
+  return (
+    <div>
+        {showPersonal && 
+        <section className='personal'>
+            <div className='container'>
+                <div style={{textAlign:'center'}} id='arrowUp'>
+                {/* <button onClick={handleContent}  style={{textAlign: 'center',background: 'transparent', border:' none'}}>
+                <i className="fa-solid fa-angle-up" style={{color: '#fff'}}></i>
+                </button>
+                </div>
+                <div style={{textAlign:'center'}} id='arrowDown' >
+                <button onClick={handleArrow}  style={{textAlign: 'center',background: 'transparent', border:' none'}}>
+                <i className="fa-solid fa-angle-down" style={{color: '#fff'}}></i>
+                </button> */}
+                </div>
+
+                <h3 className='personalHead' id='showCont'>WedFund  is more than just a business lending company. We are dedicated to being your financial partner, assisting you not only in your company's growth but also your personal financial growth.  Apply for a customised personal loan from WedFund to avail funds on demand.</h3>
+                <p id='hideCont'>Can't get a business loan? Apply for WedFund's personal loan instead.</p>
+                {/* <p id='hideCont'>Can't get a business loan? Apply for WedFund's personal loan instead. <span id='otherCont' style={{display: 'none'}}> We want to be your financial friend, helping you make your biggest moments truly special.Apply for a personalized wedding loan from WedFund to make your dream day a reality.</span></p> */}
+                <div className='row'>
+                    <div className='d-flex justify-content-center gap-3 mb-2'>
+                        <Link to='https://metahiv.netlify.app/' rel="noopener noreferrer" className='btn btn-Apply' target='_blank'>APPLY NOW</Link>
+                        {/* <Link to='#' className='btn btn-Apply' id='close' onClick={handleClose}>Close</Link> */}
+                    </div>
+                </div>
+            </div>
+        </section>
+        }
+    </div>
+  )
+}
+
+export default Personal
