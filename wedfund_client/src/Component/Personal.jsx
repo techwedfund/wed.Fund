@@ -47,7 +47,7 @@ useEffect(() => {
 
                 <div className='row'>
                     <div className='d-flex justify-content-center mb-2'>
-                        <Link to='https://wedfundb2c.netlify.app/' rel="noopener noreferrer" className='btn btn-Apply' target='_blank'>APPLY NOW</Link>
+                        <Link to='https://wedfund-personal.el.r.appspot.com/' rel="noopener noreferrer" className='btn btn-Apply' target='_blank'>APPLY NOW</Link>
                     </div>
                 </div>
             </div>

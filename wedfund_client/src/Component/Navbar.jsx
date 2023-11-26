@@ -61,7 +61,7 @@ function Navbar () {
         <>
             <nav className="navbar navbar-expand-lg fixed-top bg-white" style={{backgroundColor: 'white'}}>
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/"><img src={logo} rel="noopener noreferrer" className='img-fluid logo' alt='logo' />WedFund</a>
+                    <a className="navbar-brand" href="https://wed.fund"><img src={logo} rel="noopener noreferrer" className='img-fluid logo' alt='logo' />WedFund</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>
